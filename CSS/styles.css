@@ -22,7 +22,7 @@ body{
 .wrapper{
       position: relative;
       width: 400px;
-      height: 500px;
+      min-height: 400px;
       background: #FFF;
       box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.25);
       border-radius: 20px;
@@ -34,7 +34,7 @@ body{
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      gap: 10px;
+      gap: 15px;
 }
 
 .wrapper .imageBx{
@@ -47,13 +47,17 @@ body{
       -moz-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
+      border-radius: 20px 20px 0 0;
+      -webkit-border-radius: 20px 20px 0 0;
+      -moz-border-radius: 20px 20px 0 0;
+      -ms-border-radius: 20px 20px 0 0;
+      -o-border-radius: 20px 20px 0 0;
 }
       
 .wrapper .imageBx img{
       width: 150px;
       height: 150px;
       position: absolute;
-      border-radius: 50%;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -25%);
@@ -61,6 +65,7 @@ body{
       -moz-transform: translate(-50%, -25%);
       -ms-transform: translate(-50%, -25%);
       -o-transform: translate(-50%, -25%);
+      border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
@@ -72,4 +77,80 @@ body{
       -o-transition: all 0.3s ease;
       border: 3px solid #FFF;
       box-shadow: 0 0 0 3px #F00;
+}
+
+.wrapper .userData{
+      margin-top: 45px;
+      text-align: center;
+}
+
+.wrapper .social-media ul{
+      display: flex;
+      gap: 10px;
+      font-size: 25px;
+}
+
+.wrapper .social-media ul li{
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+}
+
+.wrapper .social-media ul li:hover{
+      scale: 1.2;
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+}
+
+.wrapper .social-media ul li a{
+      color: #000;
+}
+
+.wrapper .contact-btn{
+      display: flex;
+      gap: 20px;
+}
+
+.wrapper .contact-btn button{
+      border: none;
+      outline: none;
+      padding: 10px 40px;
+      cursor: pointer;
+      background: #2D7BD8;
+      color: #FFF;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+}
+
+.wrapper .contact-btn button:hover{
+      scale: 1.1;
+      background: #005BD8;
+}
+
+.wrapper .analytics{
+      display: flex;
+      /* gap: 20px; */
+      padding-bottom: 20px;
+}
+
+.wrapper .analytics .data{
+      border-right: 1px solid #3a3a3a;
+      padding: 2px 15px;
+}
+
+.wrapper .analytics .data:last-child{
+      border-right: none;
 }
