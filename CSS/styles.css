@@ -63,6 +63,7 @@ body{
       
 .wrapper .imageBx img{
       width: 150px;
+      pointer-events: none;
       height: 150px;
       position: absolute;
       left: 50%;
@@ -170,9 +171,13 @@ body{
       border-right: 1px solid #3a3a3a;
       padding: 2px 15px;
 }
-
 .wrapper .analytics .data:last-child{
       border-right: none;
+}
+
+.wrapper .analytics .data i{
+      color: var(--clr);
+      font-size: 18px;
 }
 
 .themes{
@@ -202,7 +207,7 @@ body{
       border: 2px solid #FFF;
       outline: none;
       background: var(--clr);
-      box-shadow:       0 0 10px var(--clr),      0 0 20px var(--clr),      0 0 30px var(--clr);
+      box-shadow: 0 0 10px var(--clr), 0 0 20px var(--clr), 0 0 30px var(--clr);
       scale: 0.9;
       cursor: pointer;
       border-radius: 50%;
